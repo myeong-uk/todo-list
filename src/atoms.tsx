@@ -12,6 +12,11 @@ export enum Categories {
   "DONE" = "DONE",
 }
 
+export const customCategoriesState = atom<string[]>({
+  key: "customCategories",
+  default: [],
+});
+
 export interface IToDo {
   text: string;
   id: number;
